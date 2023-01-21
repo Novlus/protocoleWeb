@@ -1,0 +1,7 @@
+#RewriteEngine On
+
+#RewriteRule ^(.*)$ /app/leonard.php?%{QUERY_STRING} [R,NC]
+#RewriteRule ^(.*)$ /app/leonard.php?itp=$1 [R,NC]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ /app/leonard.php?itp=$1 [R,NC]
+#RewriteRule ^(.*)\.php7$ /scripts/$1.php [L]

@@ -1,0 +1,247 @@
+J'ai désactivé les rewrites rules dans le fichier .htacces j'ai
+toujours le problème de forwarding
+
+History
+
+1  ls
+    2  cd /etc/apache2
+    3  ls
+    4  cd sites-available
+    5  ls
+    6  touch ciasie.apache.local.conf
+    7  nano ciasie.apache.local.conf
+    8  cd /var/www
+    9  ls
+   10  mkdir vh1
+   11  ls
+   12  mkdir vh2
+   13  ls
+   14  cd /etc/apache2
+   15  cd sites-available
+   16  ls
+   17  nano ciasie.apache.local.conf
+   18  touch ciasie.php.local.conf
+   19  nano ciaisie.php.local.conf
+   20  ls
+   21  a2 ensite ciasie.apache.local
+   22  a2ensite ciasie.apache.local
+   23  service apache2 reload
+   24  service apache2 start
+   25  apachectl configtest
+   26*
+   27  apachectl graceful
+   28  ls
+   29  a2ensite ciasie.php.local
+   30  service apache2 reload
+   31  apachectl configtest
+   32  apachectl graceful
+   33  ls
+   34  nano ciaisie.php.local.conf
+   35  nano ciaisie.apache.local.conf
+   36  nano ciasie.apache.local.conf
+   37  apachectl configtest
+   38  apachectl graceful
+   39  nano ciaisie.php.local.conf
+   40  cd /var/www
+   41  ls
+   42  cd /etc/apache2
+   43  ls
+   44  cd sites-enabled
+   45  ls
+   46  cd ..
+   47  cd sites-available
+   48  ls
+   49  nano ciasie.apache.local.conf
+   50  apachectl configtest
+   51  apachectl graceful
+   52  cd /var/www
+   53  ls
+   54  cd vh1
+   55  ls
+   56  touch liste.html
+   57  rm liste.html
+   58  touch list.html
+   59  nano list.html
+   60  cd /etc/apache2
+   61  ls
+   62  cd sites-available
+   63  ls
+   64  nano ciasie.php.local.conf
+   65  nano ciasie.php.local.conf
+   66  ls
+   67  nano ciasie.php.local.conf
+   68  nano ciaisie.php.local.conf
+   69  rm ciaisie.php.local.conf
+   70  cd ..
+   71  ls
+   72  cd sites-enabled
+   73  ls
+   74  rm ciasie.php.local.conf
+   75  cd ..
+   76  ls
+   77  cd sites-available
+   78  ls
+   79  nano ciasie.php.local.conf
+   80  a2ensite ciasie.php.local.conf
+   81  service apache2 reload
+   82  apachectl configtest
+   83  apachectl graceful
+   84  cd /var/www
+   85  ls
+   86  cd vh2
+   87  ls
+   88  touch index.html
+   89  nano index.html
+   90  cd /etc/apache2
+   91  ls
+   92  cd sites-available
+   93  ls
+   94  nano ciasie.apache.local.conf
+   95  apachectl configtest
+   96  apachectl graceful
+   97  ls
+   98  cd /var/www
+   99  ls
+  100  cd vh1
+  101  touch nomvh1.html
+  102  nano nomwh1.html
+  103  cd ..
+  104  ls
+  105  cd vh2
+  106  ls
+  107  touch nano nomwh2.html
+  108  nano nomwh2.html
+  109  cd ..
+  110  ls
+  111  cd vh1
+  112  ls
+  113  nano nomvh1.html
+  114  ls
+  115  rm nomwh1.html
+  116  cd ..
+  117  apt install php php-curl php-mysql php-imagick php-intl php-mysqlnd
+  118  apt install php
+  119  apt install php-curl
+  120  a2dismod php8.1
+  121  service apache2 restart
+  122  cd /etc/apache2
+  123  ls
+  124  cd sites-available
+  125  ls
+  126  nano ciasie.php.local.conf
+  127  apachectl configtest
+  128  apachectl graceful
+  129  cd /var/www
+  130  ls
+  131  cd vh2
+  132  ls
+  133  touch test.php
+  134  nano test.php
+  135  ls
+  136  nano test.php
+  137  service apache2 reload
+  138  apachectl configtest
+  139  apachectl graceful
+  140  cd ..
+  141  ls
+  142  cd vh1
+  143  ls
+  144  touch test.php
+  145  ls
+  146  nano test.php
+  147  ls
+  148  cd ..
+  149  ls
+  150  cd /etc/apache
+  151  cd /etc/apache2
+  152  ls
+  153  cd sites-available
+  154  ls
+  155  nano ciasie.php.local
+  156  nano ciasie.php.local.conf
+  157  apachectl configtest
+  158  apachectl graceful
+  159  service apache2 reload
+  160  cd /var/www
+  161  ls
+  162  cd vh2
+  163  ls
+  164  nano nano
+  165  rm nano
+  166  nano index.html
+  167  apache2ctl -M
+  168  a2enmod rewrite
+  169  service apache2 restart
+  170  ls
+  171  nano .htaccess
+  172  ls
+  173  ls -a
+  174  mkdir app
+  175  cd app
+  176  ls
+  177  touch leonard.php
+  178  ls
+  179  cd ..
+  180  ls
+  181  nano .htaccess
+  182  cd /etc/apache2
+  183  ls
+  184  cd sites-available
+  185  ls
+  186  nano ciasie.php.local.conf
+  187  apachectl configtest
+  188  nano ciasie.php.local.conf
+  189  apachectl configtest
+  190  apachectl graceful
+  191  service apache2 reload
+  192  cd /var/www
+  193  ls
+  194  cd vh2
+  195  nano .htaccess
+  196  ls
+  197  nano /etc/apache2/sites-available/ciasie.php.local.conf
+  198  ls
+  199  nano .htaccess
+  200  service apache2 reload
+  201  apachectl configtest
+  202  apachectl graceful
+  203  nano .htaccess
+  204  apache2ctl -M
+  205  a2enmod auth_basic
+  206  a2enmod authz_user
+  207  cd /etc/apache2/sites-available
+  208  ls
+  209  nano ciasie.php.local.conf
+  210  cd /var/www
+  211  ls
+  212  cd vg2
+  213  cd vh2
+  214  ls
+  215  nano .htaccess
+  216  ls
+  217  mkdir interne
+  218  mkdir team
+  219  ls
+  220  cd /etc/apache2/utilisateur.mdp
+  221  cd /etc/apache2
+  222  ls
+  223  touch  /etc/apache2/utilisateur.mdp
+  224  ls
+  225  nano utilisateur.mdp
+  226  htpasswd /etc/apache2/utilisateur.mdp user1
+  227  htpasswd /etc/apache2/utilisateur.mdp pierre
+  228  htpasswd /etc/apache2/utilisateur.mdp paul
+  229  htpasswd /etc/apache2/utilisateur.mdp jacques
+  230  ls
+  231  cd sites-available/
+  232  ls
+  233  nano ciasie.php.local.conf
+  234*
+  235  service apache2 restart
+  236  apachectl graceful
+  237  touch /etc/apache2/groupes
+  238  nano /etc/apache2/groupes
+  239  nano ciasie.php.local.conf
+  240  istory
+  241  history
+
